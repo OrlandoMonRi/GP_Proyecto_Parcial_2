@@ -1,0 +1,101 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://Player.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Zombie.tscn" type="PackedScene" id=2]
+[ext_resource path="res://GunShotSnglFireIn PE1097304.mp3" type="AudioStream" id=3]
+[ext_resource path="res://ZombieSP.tscn" type="PackedScene" id=4]
+[ext_resource path="res://MISION1.png" type="Texture" id=5]
+
+[node name="World" type="Node2D"]
+
+[node name="TextureRect" type="TextureRect" parent="."]
+margin_right = 1025.0
+margin_bottom = 601.0
+texture = ExtResource( 5 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Player" parent="." instance=ExtResource( 1 )]
+position = Vector2( 637, 93 )
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Player"]
+stream = ExtResource( 3 )
+
+[node name="Zombie" parent="." instance=ExtResource( 2 )]
+position = Vector2( 64, 90 )
+
+[node name="Zombie2" parent="." instance=ExtResource( 2 )]
+position = Vector2( 314, 380 )
+
+[node name="Zombie3" parent="." instance=ExtResource( 2 )]
+position = Vector2( 621, 527 )
+
+[node name="Zombie4" parent="." instance=ExtResource( 2 )]
+position = Vector2( -749, -2 )
+
+[node name="Zombie5" parent="." instance=ExtResource( 2 )]
+position = Vector2( 1747, -453 )
+
+[node name="Zombie6" parent="." instance=ExtResource( 2 )]
+position = Vector2( -403, -351 )
+
+[node name="Zombie7" parent="." instance=ExtResource( 2 )]
+position = Vector2( 1670, 515 )
+
+[node name="Zombie8" parent="." instance=ExtResource( 2 )]
+position = Vector2( -492, 455 )
+
+[node name="Zombie9" parent="." instance=ExtResource( 2 )]
+position = Vector2( 248, -342 )
+
+[node name="Zombie10" parent="." instance=ExtResource( 2 )]
+position = Vector2( -6707, 3533 )
+
+[node name="Zombie11" parent="." instance=ExtResource( 2 )]
+position = Vector2( 692, -1641 )
+
+[node name="Zombie12" parent="." instance=ExtResource( 2 )]
+position = Vector2( -3816, 2030 )
+
+[node name="Zombie13" parent="." instance=ExtResource( 2 )]
+position = Vector2( 4248, 2030 )
+
+[node name="Zombie14" parent="." instance=ExtResource( 2 )]
+position = Vector2( -6878, 1802 )
+
+[node name="Zombie15" parent="." instance=ExtResource( 2 )]
+position = Vector2( -1553, -2687 )
+
+[node name="Zombie16" parent="." instance=ExtResource( 2 )]
+position = Vector2( 7615, -1317 )
+
+[node name="Zombie17" parent="." instance=ExtResource( 2 )]
+position = Vector2( -6460, -1279 )
+
+[node name="Zombie18" parent="." instance=ExtResource( 2 )]
+position = Vector2( 1719, -2706 )
+
+[node name="Zombie19" parent="." instance=ExtResource( 2 )]
+position = Vector2( 2251, 3856 )
+
+[node name="Zombie20" parent="." instance=ExtResource( 2 )]
+position = Vector2( -2009, 2353 )
+
+[node name="Zombie21" parent="." instance=ExtResource( 2 )]
+position = Vector2( 6702, 1459 )
+
+[node name="Zombie22" parent="." instance=ExtResource( 2 )]
+position = Vector2( -3664, -1793 )
+
+[node name="Zombie23" parent="." instance=ExtResource( 2 )]
+position = Vector2( 5180, -1717 )
+
+[node name="Zombie24" parent="." instance=ExtResource( 2 )]
+position = Vector2( -4672, 604 )
+
+[node name="Zombie25" parent="." instance=ExtResource( 2 )]
+position = Vector2( 5389, 4065 )
+
+[node name="ZombieSP" parent="." instance=ExtResource( 4 )]
+position = Vector2( -17618, 17080 )
